@@ -16,8 +16,10 @@ by Jing.
 	- puppet module install adrien-network
 
 ### Usage:
-	- [vm1] ping vm1
-	- [vm2] ping vm2
+	- [dns] vagrant up && vagrant ssh
+	- [vm1] vagrant up && vagrant ssh
+	- [vm2] vagrant up && vagrant ssh
+	- [vm3] vagrant up && vagrant ssh
 	
 ###  Config:
 	upddate dns server
