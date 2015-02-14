@@ -1,25 +1,3 @@
-'
-// [vagrant + puppet lab, 2-node] os: ubuntu/trusty64, ip: 192.168.50.10/11
-// by Jing.
-
-Usage:
-	[vm1] ping vm1
-	[vm2] ping vm2
-	
-Config:
-	upddate dns server
-		- [dns] vi ./manifests/default.pp::dnsmasq::address 
-		  [host] vagrant provision;vagrant ssh
-	add new machine
-		- step 1: assign ip
-			[vm3] vi ./manifests/default.pp::ipaddress
-			[host] vagrant provision;vagrant ssh
-			
-		- step 2: update dns server
-			[dns] vi ./manifests/default.pp::dnsmasq::address 
-			[host] agrant provision;vagrant ssh
-	
-	
 # lab-2-dns
 
 [vagrant + puppet lab, 2-node] os: ubuntu/trusty64, ip: 192.168.50.10/11
