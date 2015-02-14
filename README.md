@@ -2,6 +2,8 @@
 
 [vagrant + puppet lab, 2-node] os: ubuntu/trusty64, ip: 192.168.50.10/11
 
+Detail: https://docs.google.com/document/d/1Mo1Q85ppvud_rQHDa43qOvRbkGwpPgLxZgCSGbResoQ/edit?usp=sharing
+
 by Jing.
 
 ### Requirement
