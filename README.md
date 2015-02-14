@@ -4,6 +4,15 @@
 
 by Jing.
 
+### Requirement
+1. VirtualBox
+2. Vagrant
+	vagrant box add ubuntu/trusty64
+3. Puppet
+	sudo apt-get install puppetmaster
+4. Module
+	- puppet module install adrien-network
+
 ### Usage:
 	- [vm1] ping vm1
 	- [vm2] ping vm2
@@ -33,14 +42,7 @@ by Jing.
     vm1: vagrant up
     vm2: vagrant up
 
-### Requirement
-1. VirtualBox
-2. Vagrant
-	vagrant box add ubuntu/trusty64
-3. Puppet
-	sudo apt-get install puppetmaster
-4. Module
-	- puppet module install adrien-network
+
 
 '
 
