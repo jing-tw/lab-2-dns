@@ -14,6 +14,7 @@ by Jing.
 	sudo apt-get install puppetmaster
 4. Module
 	- puppet module install adrien-network
+	- puppet module install lex-dnsmasq
 
 ### Usage:
 	- [dns] vagrant up && vagrant ssh
@@ -21,6 +22,16 @@ by Jing.
 	- [vm2] vagrant up && vagrant ssh
 	- [vm3] vagrant up && vagrant ssh
 	
+### VM info
+    os: ubuntu/trusty64
+    dns: Domain Name Server (default.pp)
+	eth1: 192.168.50.2   (by vagrant)
+	
+    vm1: 
+	    eth1: 192.168.50.10  (by puppet)
+    vm2: 
+	    eth1: 192.168.50.11  (by puppet)
+
 ###  Config:
 	upddate dns server
 		[dns] vi ./manifests/default.pp::dnsmasq::address 
@@ -32,15 +43,7 @@ by Jing.
 		step 2: update dns server
 			[dns] vi ./manifests/default.pp::dnsmasq::address 
 			[host] agrant provision;vagrant ssh
-### VM info
-    os: ubuntu/trusty64
-    dns: Domain Name Server (default.pp)
-	eth1: 192.168.50.2   (by vagrant)
-	
-    vm1: 
-	    eth1: 192.168.50.10  (by puppet)
-    vm2: 
-	    eth1: 192.168.50.11  (by puppet)
+
 
 ### Launch VM
     vm1: vagrant up
